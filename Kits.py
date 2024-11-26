@@ -1,12 +1,22 @@
 import streamlit as st
+from PIL import Image
+import requests
+from io import BytesIO
 
 # Function to display biography with image
 def display_bio(name, title, location, education, skills, philosophy, mission, vision, image_url):
     st.title(f"**{name}**")
     st.header(f"**{title}**")
     
-    # Display the image as 1x1 (square)
-    st.image(image_url, caption=f"Photo of {name}", width=300, height=300)  # Adjust width and height as needed
+    # Load the image from URL
+    response = requests.get(image_url)
+    img = Image.open(BytesIO(response.content))
+    
+    # Crop the image to a square (1x1 aspect ratio)
+    img = img.crop((0, 0, min(img.size), min(img.size)))  # Crop to square based on the smallest dimension
+    
+    # Display the cropped image as square
+    st.image(img, caption=f"Photo of {name}", use_column_width=True)
     
     st.subheader("Location:")
     st.write(location)
