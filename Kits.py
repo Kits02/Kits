@@ -26,7 +26,7 @@ def display_bio(name, title, location, education, skills, philosophy, mission, v
 
 # Biography details
 bio_data = {
-    "name": "Imperator Bartolomaeus",
+    "name": "Paquito Jr. V. Binongo",
     "title": "Freshman Student | YouTube Scriptwriter | Copywriter",
     "location": "Philippines",
     "education": "Freshman, currently exploring and adapting to the grading system in the Philippines.",
