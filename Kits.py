@@ -27,11 +27,11 @@ def display_bio(name, title, location, education, skills, philosophy, mission, v
 # Biography details
 bio_data = {
     "name": "Paquito Jr. V. Binongo",
-    "title": "Freshman Student | YouTube Scriptwriter | Copywriter",
+    "title": "Freshman Student | Programmer| Copywriter",
     "location": "Philippines",
     "education": "Freshman, currently exploring and adapting to the grading system in the Philippines.",
     "skills": [
-        "YouTube Scriptwriting: Expert in creating engaging long-form and short-form scripts.",
+        "Graduated at Malinao National High School",
         "Copywriting: Skilled in crafting persuasive and compelling copy for diverse clients.",
         "Freelance Expertise: Developing a robust profile on Upwork to showcase writing skills and services.",
     ],
@@ -41,7 +41,7 @@ bio_data = {
         "and promoting strategies for self-improvement."
     ),
     "mission": (
-        "To excel in scriptwriting, storytelling, and helping audiences find clarity and value "
+        "To excel more in programming, storytelling, and helping audiences find clarity and value "
         "in the content they consume."
     ),
     "vision": (
