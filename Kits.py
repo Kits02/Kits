@@ -15,8 +15,11 @@ def display_bio(name, title, location, education, skills, philosophy, mission, v
     # Crop the image to a square (1x1 aspect ratio)
     img = img.crop((0, 0, min(img.size), min(img.size)))  # Crop to square based on the smallest dimension
     
-    # Display the cropped image as square
-    st.image(img, caption=f"Photo of {name}", use_column_width=True)
+    # Resize the image to make it smaller
+    img = img.resize((200, 200))  # Resize the image to 200x200 pixels (adjust size as needed)
+    
+    # Display the resized image
+    st.image(img, caption=f"Photo of {name}", use_column_width=False)
     
     st.subheader("Location:")
     st.write(location)
