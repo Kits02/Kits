@@ -8,7 +8,7 @@ def display_bio(name, title, location, education, skills, philosophy, mission, v
     st.title(f"**{name}**")
     st.header(f"**{title}**")
     
-    # Load the image from URL
+    # Load the image from the URL
     response = requests.get(image_url)
     img = Image.open(BytesIO(response.content))
     
